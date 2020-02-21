@@ -1,0 +1,19 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# resources
+/resources/*
+!/resources/.gitkeep
+
+# misc
+.DS_Store
+
+npm-debug.log*
+
+# editors
+*.sublime-project
+*.sublime-workspace
+.idea
+.vscode
