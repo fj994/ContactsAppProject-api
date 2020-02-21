@@ -1,0 +1,246 @@
+{
+  "contacts": [
+    {
+      "email": "addie.hernandez@gmail.com",
+      "favorite": false,
+      "id": 1,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Addie Hernandez",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "home",
+          "number": "+385510101010"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38501010101"
+        }
+      ]
+    },
+    {
+      "email": "oscar.arnold@gmail.com",
+      "favorite": false,
+      "id": 2,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Oscar Arnold",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "home",
+          "number": "+385521212121"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38512121212"
+        }
+      ]
+    },
+    {
+      "email": "isaiah.mcguire@gmail.com",
+      "favorite": false,
+      "id": 3,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Isaiah McGuire",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "home",
+          "number": "+385531313131"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38513131313"
+        }
+      ]
+    },
+    {
+      "email": "ann.schneider@gmail.com",
+      "favorite": false,
+      "id": 4,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Ann Schneider",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "home",
+          "number": "+385541414141"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38514141414"
+        }
+      ]
+    },
+    {
+      "email": "agnes.terry@gmail.com",
+      "favorite": false,
+      "id": 5,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Agnes Terry",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "home",
+          "number": "+385551515151"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38515151515"
+        }
+      ]
+    },
+    {
+      "email": "rose.bush@gmail.com",
+      "favorite": false,
+      "id": 6,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Rose Bush",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "wife",
+          "number": "+385561616161"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38516161616"
+        }
+      ]
+    },
+    {
+      "email": "duane.reese@gmail.com",
+      "favorite": false,
+      "id": 7,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Duane Reese",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "wife",
+          "number": "+385571717171"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38517171717"
+        }
+      ]
+    },
+    {
+      "email": "mae.chandler@gmail.com",
+      "favorite": false,
+      "id": 8,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Mae Chandler",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "wife",
+          "number": "+385581818181"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38518181818"
+        }
+      ]
+    },
+    {
+      "email": "evelyn.weaver@gmail.com",
+      "favorite": false,
+      "id": 9,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Evelyn Weaver",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "wife",
+          "number": "+385591919191"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38519191919"
+        }
+      ]
+    },
+    {
+      "email": "catherine.moore@gmail.com",
+      "favorite": false,
+      "id": 10,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Catherine Moore",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "home",
+          "number": "+385502020202"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38520202020"
+        }
+      ]
+    },
+    {
+      "email": "sam.manning@gmail.com",
+      "favorite": false,
+      "id": 11,
+      "image": {
+        "large": "",
+        "thumbnail": ""
+      },
+      "name": "Sam Manning",
+      "phoneNumbers": [
+        {
+          "id": "ivdsva",
+          "label": "home",
+          "number": "+385512121212"
+        },
+        {
+          "id": "hopews",
+          "label": "work",
+          "number": "+38521212121"
+        }
+      ]
+    }
+  ]
+}

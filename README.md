@@ -12,55 +12,68 @@ To successfully run the API you need to:
  3. Run the API with `npm start`
 
 ## Configuration
-You can configure API response model by editing `db.json` file.  
+You can configure API response model by editing `seed.json` file.  
 If you do so, please attach the modified file in the email, alongside the link to the frontend task.
 
+## How does it work
+This application uses json-server module under the hood and adds the image upload on top of it.  
+On API startup, `db.json` file is going to be created from `seed.json`, and will be used as a database.  
+Making POST, PUT, PATCH or DELETE requests will result with json-server automatically updating `db.json` file.  
+**NOTE:** response examples look like data from `seed.json` config, if you re-configure it, responses will differ from whats shown below.
+
 ## Endpoints
-This application uses json-server module under the hood and just adds image upload on top of it.  
-**NOTE:** response examples look ike data from `db.json` config, if you re-configure it, responses will differ from whats shown below.
 
 ### GET /contacts
-Returns an array of contacts modeled after contacts property in `db.json`.  
-If you want to paginate, filter or sort the results, check json-server [documentation]((https://github.com/typicode/json-server#routes)) on how to.  
+Returns an array of contacts modeled after contacts property in `seed.json`.  
+
+#### Pagination
+If you want to work with pagination, filter or sort the results, check json-server [documentation](https://github.com/typicode/json-server#routes) on how to.  
+To parse the link headers in pagination response, feel free to use [parse-link-header](https://www.npmjs.com/package/parse-link-header).
 
 Response example:
 ```js
 [
   {
-    "email": "oscar@arnold.com",
+    "email": "addie.hernandez@gmail.com",
     "favorite": false,
     "id": 1,
-    "imagePath": "",
-    "name": "Oscar Arnold",
+    "image": {
+      "large": "",
+      "thumbnail": ""
+    },
+    "name": "Addie Hernandez",
     "phoneNumbers": [
       {
-        "id": "sbyqce",
+        "id": "ivdsva",
         "label": "home",
-        "number": "+385123123123"
+        "number": "+385510101010"
       },
       {
-        "id": "thamfs",
+        "id": "hopews",
         "label": "work",
-        "number": "+385223223223"
+        "number": "+38501010101"
       }
     ]
   },
   {
-    "email": "isaiah@mcguire.com",
-    "favorite": true,
+    "email": "oscar.arnold@gmail.com",
+    "favorite": false,
     "id": 2,
-    "imagePath": "",
-    "name": "Isaiah McGuire",
+    "image": {
+      "large": "",
+      "thumbnail": ""
+    },
+    "name": "Oscar Arnold",
     "phoneNumbers": [
       {
-        "id": "kyqwau",
+        "id": "ivdsva",
         "label": "home",
-        "number": "+385987987987"
+        "number": "+385521212121"
       },
       {
-        "id": "eynlyu",
+        "id": "hopews",
         "label": "work",
-        "number": "+385678678678"
+        "number": "+38512121212"
       }
     ]
   }
@@ -68,26 +81,29 @@ Response example:
 ```
 
 ### GET /contacts/{id}
-Returns a single contact by finding one in contacts array that matches the provided id.
+Returns a single contact by finding one in contacts array that matches the provided id.  
 
 Response example:
 ```js
 {
-  "email": "oscar@arnold.com",
+  "email": "addie.hernandez@gmail.com",
   "favorite": false,
   "id": 1,
-  "imagePath": "",
-  "name": "Oscar Arnold",
+  "image": {
+    "large": "",
+    "thumbnail": ""
+  },
+  "name": "Addie Hernandez",
   "phoneNumbers": [
     {
-      "id": "sbyqce",
+      "id": "ivdsva",
       "label": "home",
-      "number": "+385123123123"
+      "number": "+385510101010"
     },
     {
-      "id": "thamfs",
+      "id": "hopews",
       "label": "work",
-      "number": "+385223223223"
+      "number": "+38501010101"
     }
   ]
 }
@@ -99,11 +115,11 @@ Creates a new contact. Returns the newly created contact.
 ### PUT /contacts/{id}
 Updates an existing contact. Returns the updated contact.
 
-### GET /static/{fileName}
-Serves uploaded images.
-
 ### DELETE /contacts/{id}
 Deletes an existing contact. Returns an empty object.
+
+### GET /static/{fileName}
+Serves uploaded images.
 
 ### POST /upload
 Uploads the image.  
@@ -112,7 +128,7 @@ It expects `form-data` request with key named `file` and saves 2 images with has
 Response example:
 ```js
 {
-  image: '16f3eba2d9dc3ee63785fcf4197cd800.png',
+  large: '16f3eba2d9dc3ee63785fcf4197cd800.png',
   thumbnail: '16f3eba2d9dc3ee63785fcf4197cd800-thumb.png'
 }
 ```
