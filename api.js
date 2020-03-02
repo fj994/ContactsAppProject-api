@@ -40,7 +40,7 @@ server.post('/upload', async (req, res) => {
   const imagePath = joinResourcePath(image);
   const thumbnailPath = joinResourcePath(thumbnail);
   const resp = {
-    large,
+    image,
     thumbnail
   };
 

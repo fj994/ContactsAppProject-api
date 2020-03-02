@@ -38,7 +38,7 @@ Response example:
     "favorite": false,
     "id": 1,
     "image": {
-      "large": "",
+      "image": "",
       "thumbnail": ""
     },
     "name": "Addie Hernandez",
@@ -60,7 +60,7 @@ Response example:
     "favorite": false,
     "id": 2,
     "image": {
-      "large": "",
+      "image": "",
       "thumbnail": ""
     },
     "name": "Oscar Arnold",
@@ -90,7 +90,7 @@ Response example:
   "favorite": false,
   "id": 1,
   "image": {
-    "large": "",
+    "image": "",
     "thumbnail": ""
   },
   "name": "Addie Hernandez",
@@ -123,12 +123,12 @@ Serves uploaded images.
 
 ### POST /upload
 Uploads the image.  
-It expects `form-data` request with key named `file` and saves 2 images with hashed names, large one and a thumbnail.  
+It expects `form-data` request with key named `file` and saves 2 images with hashed names, image one and a thumbnail.  
 
 Response example:
 ```js
 {
-  large: '16f3eba2d9dc3ee63785fcf4197cd800.png',
+  image: '16f3eba2d9dc3ee63785fcf4197cd800.png',
   thumbnail: '16f3eba2d9dc3ee63785fcf4197cd800-thumb.png'
 }
 ```
