@@ -3,10 +3,6 @@
 # dependencies
 /node_modules
 
-# resources
-/resources/*
-!/resources/.gitkeep
-
 # generated files
 db.json
 
